@@ -1,6 +1,6 @@
 # Bikeshare-sql-analysis
 
-# Focus: Operational Efficiency & Usage Patterns
+## Focus: Operational Efficiency & Usage Patterns
 
 This project demonstrates my ability to extract business insights from relational databases using SQL. I analyzed a bike-sharing system (simulating an Italian operation) to help managers understand station popularity, identify trip anomalies, and categorize user behavior.
 
