@@ -1,17 +1,3 @@
--- Segmentation of Milan's trips (Short, Medium, Long)
--- Used Window Functions to calculate the participation percentage
-WITH MilanTrips AS (
-    SELECT 
-        t.duration_minutes,
-        CASE 
-            WHEN t.duration_minutes < 20 THEN 'Short'
-            WHEN t.duration_minutes BETWEEN 20 AND 60 THEN 'Medium'
-            ELSE 'Long'
-        END AS duration_category
-    FROM Trips t
-    JOIN Stations s ON s.station_id = t.start_station_id
-    WHERE s.city = 'Milano'
-)
 WITH MilanTrips AS (
     SELECT 
         t.duration_minutes,
